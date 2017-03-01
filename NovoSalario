@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/***
+ * Esse programa corresponde a 1a questao da lista de exercicios de estrutura de controle
+ * @author Caio
+ *
+ */
+public class NovoSalario {
+	public static void main(String[] args) {
+		
+	
+	float  novoSalario, valorAumento;
+	Scanner leitor = new Scanner (System.in);
+	System.out.println("Digite o valor do salario: ");
+	float valorSalario = leitor.nextFloat();
+	
+	System.out.println("Digite o percentual de auemnto: ");
+	float percentualAumento = leitor.nextFloat();
+	
+	valorAumento = (valorSalario * percentualAumento)/100;
+	System.out.println("O valor do aumento foi de: " +valorAumento);
+	
+	novoSalario = (valorSalario + valorAumento);
+	System.out.println("O seu novo salario sera de: " +novoSalario);
+	
+	leitor.close();
+	}
+	
+	
+
+}
