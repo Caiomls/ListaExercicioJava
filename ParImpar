@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+/***
+ * Segunda Questao da Lista de Estruturas
+ * @author Caio
+ *
+ */
+public class ParImpar {
+	public static void main(String[] args) {
+	int[] descobrir = new int[10];
+	Scanner leitor = new Scanner(System.in);
+	
+	//recebendo os numeros
+	for(int i=0 ; i<10 ; i++){
+		System.out.println("Digite o numero de indice " +(i+1) +" : ");
+		descobrir[i] = leitor.nextInt();
+	}
+	for(int i=0 ; i<10 ; i++){
+		if (descobrir[i]%2 != 0) {
+			System.out.println("Esse numero: " +descobrir[i] +" eh impar");
+		} else {
+			System.out.println("Esse numero: " +descobrir[i] +" eh par");
+		}
+	}
+	leitor.close();
+	}
+
+}
